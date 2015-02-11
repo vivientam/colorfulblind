@@ -1,6 +1,6 @@
 .body{
   height: 100%;
-  font-family: arial, Georgia, serif;
+  font-family: Arial, Georgia, serif;
 }
 
 .container{
@@ -31,11 +31,9 @@
   border-color: black;
 }
 
-.footer{
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  border: 0;
+
+.front-page-bottom-pics{
+  margin: 10px;
 }
 
 .main{
@@ -45,10 +43,23 @@
 }
 
 .bottom-footer{
+  background-color: white;
   border-top: 2px black solid;
-  border-bottom: 2px black solid;
+  /*border-bottom: 2px black solid;*/
 }
 
-.footer-contents{
+.bottom-footer div h4{
+  font-weight: bold;
+}
+
+.bottom-footer div p{
   font-size: 10px;
+}
+
+.rights{
+  margin-left: 20px;
+}
+
+.terms{
+  text-align: right;
 }
