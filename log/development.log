@@ -1,0 +1,1056 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 10:40:16 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 500 Internal Server Error in 1481ms
+
+SyntaxError (/Users/VivienTam/Websites/Websites2015/colorfulBlind/app/views/layouts/_footer.html.erb:49: syntax error, unexpected tSTRING_BEG, expecting ')'
+...end=(link_to "button", :class="btn btn-default btn-xs" );@ou...
+...                               ^):
+  app/views/layouts/_footer.html.erb:49: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___214141901248922231_70154695971880'
+
+
+  Rendered /Users/VivienTam/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/VivienTam/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/VivienTam/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/VivienTam/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 10:43:34 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (7.7ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (undefined local variable or method `subscribe_path' for #<#<Class:0x007f9c537b8d00>:0x007f9c58d7a360>):
+    46:         <div class="email-box">
+    47:           Your Email Address ...
+    48:         </div>
+    49:         <%=link_to subscribe_path, :class => "btn btn-default btn-xs" %>
+    50:           Subscribe
+    51:       </div>
+    52: 
+  app/views/layouts/_footer.html.erb:49:in `_app_views_layouts__footer_html_erb__1342200154908522703_70154744552640'
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___214141901248922231_70154695971880'
+
+
+  Rendered /Users/VivienTam/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/VivienTam/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/VivienTam/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 10:44:09 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 10:44:09 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 10:44:09 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 10:44:09 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 10:44:09 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 10:44:09 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 10:44:09 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 10:48:49 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 796ms (Views: 796.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 10:48:50 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 10:48:50 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 10:48:50 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 10:48:50 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 10:48:50 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 10:48:50 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 10:48:50 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 10:58:32 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 10:58:32 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 10:58:32 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 10:58:32 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 10:58:32 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 10:58:32 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 10:58:32 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 10:58:32 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:00:30 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:00:30 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:00:30 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:00:30 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:00:30 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:00:30 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:00:30 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:00:30 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:00:32 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:00:32 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:00:32 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:00:32 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:00:32 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:00:32 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:00:32 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:00:32 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:01:20 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:01:20 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:01:20 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:01:20 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:01:20 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:01:20 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:01:20 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:01:20 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:02:18 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 782ms (Views: 781.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:02:19 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:02:19 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:02:19 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:02:19 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:02:19 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:02:19 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:02:19 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:02:22 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 763ms (Views: 762.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:02:23 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:02:23 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:02:23 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:02:23 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:02:23 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:02:23 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:02:23 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:02:45 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 767ms (Views: 767.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:02:46 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:02:46 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:02:46 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:02:46 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:02:46 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:02:46 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:02:46 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:04:02 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 57ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:04:02 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:04:02 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:04:02 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:04:02 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:04:02 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:04:02 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:04:02 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:04:18 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:04:18 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:04:18 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:04:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:04:18 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:04:18 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:04:18 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:04:18 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:05:03 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:05:03 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:05:03 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:05:03 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:05:03 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:05:03 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:05:03 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:05:03 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:05:05 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:05:05 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:05:05 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:05:05 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:05:05 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:05:05 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:05:05 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:05:05 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:05:33 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:05:33 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:05:33 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:05:33 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:05:33 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:05:33 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:05:33 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:05:33 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:06:51 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:06:51 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:06:51 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:06:51 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:06:51 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:06:51 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:06:51 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:06:51 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:07:34 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 755ms (Views: 755.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:07:35 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:07:35 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:07:35 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:07:35 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:07:35 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:07:35 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:07:35 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:08:14 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:08:15 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:08:15 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:08:15 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:08:15 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:08:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:08:15 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:08:15 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:08:33 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 774ms (Views: 773.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:08:34 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:08:34 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:08:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:08:34 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:08:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:08:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:08:34 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:08:43 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 778ms (Views: 777.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:08:44 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:08:44 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:08:44 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:08:44 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:08:44 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:08:44 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:08:44 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:10:44 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 747ms (Views: 747.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:10:45 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:10:45 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:10:45 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:10:45 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:10:45 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:10:45 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:10:45 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:11:12 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 750ms (Views: 749.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:11:13 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:11:13 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:11:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:11:13 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:11:13 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:11:13 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:11:13 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:11:14 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:11:15 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:11:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:11:15 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:11:15 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:11:15 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:11:15 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:11:15 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:13:59 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 761ms (Views: 760.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:13:59 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:13:59 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:13:59 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:13:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:13:59 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:13:59 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:13:59 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:16:10 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 812ms (Views: 811.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:16:11 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:16:11 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:16:11 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:16:11 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:16:11 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:16:11 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:16:11 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:16:25 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 760ms (Views: 760.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:16:26 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:16:26 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:16:26 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:16:26 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:16:26 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:16:26 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:16:26 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:16:56 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 96ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:16:56 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:16:56 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:16:56 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:16:56 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:16:56 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:16:56 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:16:56 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:17:02 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:17:02 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:17:02 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:17:02 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:17:02 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:17:02 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:17:02 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:17:02 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:23:14 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:23:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:23:15 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:23:15 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:23:15 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:23:15 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:23:15 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:23:15 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:24:39 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:24:39 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:24:39 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:24:39 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:24:39 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:24:39 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:24:39 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:24:39 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:25:12 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:25:12 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:25:12 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:25:12 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:25:12 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:25:12 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:25:12 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:25:12 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:25:40 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:25:40 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:25:40 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:25:40 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:25:40 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:25:40 +0800
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:25:40 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:25:40 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 11:26:13 +0800
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 48ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 11:26:13 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 11:26:13 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 11:26:13 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 11:26:13 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 11:26:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 11:26:13 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 11:26:13 +0800
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCollections (20150211074238)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM schema_migrations[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCollections (20150211074238)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCollections (20150211074238)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "collections" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150211074238"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateClothTypes (20150211080705)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "cloth_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150211080705"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCloths (20150211080817)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "cloths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "price" decimal, "description" text, "material" varchar(255), "care" text, "cpllection_id" integer, "cloth_type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150211080817"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsers (20150211080841)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "address" varchar(255), "credit_card_no" integer, "credit_card_expiry_date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150211080841"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateOrders (20150211080849)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "total_price" decimal, "comment" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150211080849"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSizes (20150211082530)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "sizes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150211082530"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateSizes (20150211082530)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  DROP TABLE "sizes"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20150211082530'[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCollections (20150211074238)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "collections" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150211074238"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateClothTypes (20150211080705)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "cloth_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150211080705"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateCloths (20150211080817)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "cloths" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "price" decimal, "description" text, "material" varchar(255), "care" text, "cpllection_id" integer, "cloth_type_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150211080817"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateUsers (20150211080841)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "address" varchar(255), "credit_card_no" integer, "credit_card_expiry_date" date, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150211080841"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateOrders (20150211080849)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "total_price" decimal, "comment" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150211080849"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateSizes (20150211082530)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "sizes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150211082530"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
