@@ -1,0 +1,54 @@
+.body{
+  height: 100%;
+  font-family: arial, Georgia, serif;
+}
+
+.container{
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*.header-top{
+  background-color: blue;
+}*/
+
+.header-right{
+  float: right;
+}
+
+
+.book-an-appointment{
+  border-width: 1px;
+  border-color: black;
+}
+
+
+.header-text{
+  border-bottom: 5px;
+  border-color: black;
+}
+
+.footer{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.main{
+  background-color: white;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.bottom-footer{
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+}
+
+.footer-contents{
+  font-size: 10px;
+}
