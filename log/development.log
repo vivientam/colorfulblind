@@ -1054,3 +1054,45 @@ Migrating to CreateSizes (20150211082530)
   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150211082530"]]
   [1m[35m (0.8ms)[0m  commit transaction
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-11 17:16:24 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  Rendered static_pages/index.html within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1499ms (Views: 1499.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/layouts.css?body=1" for 127.0.0.1 at 2015-02-11 17:16:26 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-11 17:16:26 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-11 17:16:26 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-11 17:16:26 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-11 17:16:26 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-11 17:16:26 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-11 17:16:26 +0800
+
+
+Started GET "/assets/front_page/dd_6061.jpg" for 127.0.0.1 at 2015-02-11 17:16:26 +0800
+
+
+Started GET "/assets/front_page/dd.jpg" for 127.0.0.1 at 2015-02-11 17:16:26 +0800
+
+
+Started GET "/assets/front_page/dd2_2829.jpg" for 127.0.0.1 at 2015-02-11 17:16:26 +0800
+
+
+Started GET "/assets/front_page/pmsf.jpg" for 127.0.0.1 at 2015-02-11 17:16:26 +0800
