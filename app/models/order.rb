@@ -1,5 +1,5 @@
 class Order < ActiveRecord::Base
 
   belongs_to :user
-  has_many :clothes
+  has_many :apparels
 end

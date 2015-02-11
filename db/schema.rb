@@ -13,20 +13,20 @@
 
 ActiveRecord::Schema.define(version: 20150211082530) do
 
-  create_table "cloth_types", force: true do |t|
+  create_table "apparels", force: true do |t|
     t.string   "name"
+    t.text     "price"
+    t.text     "description"
+    t.string   "material"
+    t.text     "care"
+    t.integer  "collection_id"
+    t.integer  "cloth_type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "cloths", force: true do |t|
+  create_table "cloth_types", force: true do |t|
     t.string   "name"
-    t.decimal  "price"
-    t.text     "description"
-    t.string   "material"
-    t.text     "care"
-    t.integer  "cpllection_id"
-    t.integer  "cloth_type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20150211082530) do
 
   create_table "sizes", force: true do |t|
     t.string   "name"
+    t.integer  "apparel_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

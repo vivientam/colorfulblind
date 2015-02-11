@@ -1,4 +1,4 @@
 class ClothType < ActiveRecord::Base
 
-   has_many :clothes
+   has_many :apparels
 end
