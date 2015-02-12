@@ -1,5 +1,5 @@
 <div class="row">
-<h3 class="col-md-8 col-md-offset-2 col-xs-12 bold-text">Collections for 2015</h3>
+<h3 class="col-md-8 col-md-offset-2 col-xs-12 bold-text"><%= @collection.name %></h3>
 
 </div>
 
@@ -15,22 +15,22 @@
           </div>
           <div class"col-xs-12">
             <div class="col-xs-3 collection-image">
-            <%#= appreal.image %>
+                <%= image_tag("apparels/#{apparel.id}.jpg") %>
             </div>
             <div "coll-xs-9">
-              <div class="col-xs-9 collection-price">
+              <div class="col-xs-12 collection-price">
               <%= apparel.currency %> <%= apparel.price %>
               </div>
-              <div class="col-xs-9 collection-description">
+              <div class="col-xs-12 collection-description">
               <%= apparel.description %>
               </div>
-              <div class="col-xs-9 collection-material">
+              <div class="col-xs-12 collection-material">
               <%= apparel.material %>
               </div>
-              <div class="col-xs-9 collection-care">
+              <div class="col-xs-12 collection-care">
               <%= apparel.care %>
               </div>
-              <div class="col-xs-9 collection-size">
+              <div class="col-xs-12 collection-size">
               <%#= apparel.size %>
               </div>
             </div>
@@ -38,6 +38,9 @@
           
         </div>
       </div>
+      <%= link_to apparel.name, apparel_path, :class => "apparel-link" %>
     <% end %>
   </div>
 </div>
+
+

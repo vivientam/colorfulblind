@@ -52,7 +52,7 @@ ClothType.create([
 ])
 
 apparel = Apparel.create(
-  #dd2_17
+  # 01 dd2_17
   {  
     name:"two-piece gather drape cape",
     currency:"HKD",
@@ -79,7 +79,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #dd2_23
+  # 02 dd2_23
   {
     name:"one-piece side drape top",
     currency:"HKD",
@@ -106,7 +106,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #dd2_29
+  # 03 dd2_29
   {
     name:"three-piece drap vast",
     currency:"HKD",
@@ -133,7 +133,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #dd2_33
+  # 04 dd2_33
   {
     name:"one-piece miniskirt",
     currency:"HKD",
@@ -160,7 +160,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #dd2_50
+  # 05 dd2_50
   {
     name:"two-piece dress",
     currency:"HKD",
@@ -187,7 +187,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #dd2_56
+  # 06 dd2_56
   {
     name:"two-piece drape blouse",
     currency:"HKD",
@@ -214,7 +214,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #dd2_65
+  # 07 dd2_65
   {
     name:"two-piece drape pants",
     currency:"HKD",
@@ -241,7 +241,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #dd2_75
+  # 08 dd2_75
   {
     name:"one-piece cowl neck dress",
     currency:"HKD",
@@ -268,7 +268,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #dd2_81
+  # 09 dd2_81
   {
     name:"four-piece fitted skirt",
     currency:"HKD",
@@ -295,7 +295,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #dd_21
+  # 10 dd_21
   {
     name:"drop-waist gather drape dress",
     currency:"HKD",

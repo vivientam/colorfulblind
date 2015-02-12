@@ -16,6 +16,12 @@
           <div class="col-xs-9 collection-location">
           <%= collection.location %>
           </div>
+          <div>
+            <% collection.apparels.take(5).each do |apparel| %>
+              <%= image_tag("apparels/#{apparel.id}.jpg") %>
+            <% end %>
+          </div>
+
         </div>
       </div>
     <% end %>
