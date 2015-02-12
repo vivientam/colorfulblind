@@ -1,0 +1,42 @@
+<div class="row">
+
+<div class="col-xs-6">
+  <h1>Customer Login
+  </h1>
+
+  <%= form_for @signin do |f| %>
+    <div>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.text_field :password %>
+
+      <%= f.submit "SIGN IN" %>
+    </div>
+  <% end %>
+</div>
+
+<div class="col-xs-6">
+  <h1>Create Account
+  </h1>
+
+  <%= form_for @signin do |f| %>
+    <div>
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name %>
+
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.text_field :password %>
+
+      <%= f.submit "CREATE" %>
+    </div>
+  <% end %>
+</div>
+
