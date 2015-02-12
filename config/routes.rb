@@ -7,6 +7,14 @@ Rails.application.routes.draw do
 
   resources :collections
 
+  resources :apparels
+
+  resources :contacts
+
+  get 'ourstory' => 'static_pages#ourstory'
+
+  get 'contact' => 'static_pages#contact'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

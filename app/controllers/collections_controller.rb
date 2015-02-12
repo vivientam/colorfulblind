@@ -8,7 +8,6 @@ class CollectionsController < ApplicationController
     @collection = Collection.find(params[:id])
 
     @apparels = @collection.apparels
-
   end
 
   def new
