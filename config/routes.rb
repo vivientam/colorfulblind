@@ -9,8 +9,6 @@ Rails.application.routes.draw do
 
   resources :apparels
 
-  resources :contacts
-
   get 'ourstory' => 'static_pages#ourstory'
 
   get 'contact' => 'static_pages#contact'
