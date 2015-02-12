@@ -1,0 +1,33 @@
+<div class="row">
+<h3 class="col-md-8 col-md-offset-2 col-xs-12 bold-text">Collections for 2015</h3>
+
+</div>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 col-xs-12 box">
+
+    <% @apparels.each do |apparel| %>
+  
+      <div class="row">
+        <div class="col-xs-12 collection-box">
+          <div class="row collection-name">
+          <%= apparel.name %>
+          </div>
+          <div class="col-xs-9 collection-price">
+          <%= apparel.currency %> <%= apparel.price %>
+          </div>
+          <div class="col-xs-9 collection-description">
+          <%= apparel.description %>
+          </div>
+          <div class="col-xs-9 collection-material">
+          <%= apparel.material %>
+          </div>
+          <div class="col-xs-9 collection-care">
+          <%= apparel.care %>
+          </div>
+          
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,4 +1,4 @@
 class Collection < ActiveRecord::Base
 
-  has_many :clothes
+  has_many :apparels
 end
