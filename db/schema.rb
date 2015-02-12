@@ -15,7 +15,8 @@ ActiveRecord::Schema.define(version: 20150211082530) do
 
   create_table "apparels", force: true do |t|
     t.string   "name"
-    t.text     "price"
+    t.text     "currency"
+    t.decimal  "price"
     t.text     "description"
     t.string   "material"
     t.text     "care"
