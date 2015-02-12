@@ -10,20 +10,30 @@
   
       <div class="row">
         <div class="col-xs-12 collection-box">
-          <div class="row collection-name">
+          <div class="collection-name">
           <%= apparel.name %>
           </div>
-          <div class="col-xs-9 collection-price">
-          <%= apparel.currency %> <%= apparel.price %>
-          </div>
-          <div class="col-xs-9 collection-description">
-          <%= apparel.description %>
-          </div>
-          <div class="col-xs-9 collection-material">
-          <%= apparel.material %>
-          </div>
-          <div class="col-xs-9 collection-care">
-          <%= apparel.care %>
+          <div class"col-xs-12">
+            <div class="col-xs-3 collection-image">
+            <%#= appreal.image %>
+            </div>
+            <div "coll-xs-9">
+              <div class="col-xs-9 collection-price">
+              <%= apparel.currency %> <%= apparel.price %>
+              </div>
+              <div class="col-xs-9 collection-description">
+              <%= apparel.description %>
+              </div>
+              <div class="col-xs-9 collection-material">
+              <%= apparel.material %>
+              </div>
+              <div class="col-xs-9 collection-care">
+              <%= apparel.care %>
+              </div>
+              <div class="col-xs-9 collection-size">
+              <%#= apparel.size %>
+              </div>
+            </div>
           </div>
           
         </div>
