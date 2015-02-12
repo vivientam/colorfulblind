@@ -4,10 +4,10 @@ class ApparelsController < ApplicationController
     @apparels = Apparel.all
   end
 
-  def show
-    @collection = Collection.find(params[:id])
-    
+  def show  
     @apparel = Apparel.find(params[:id])
+
+    @collection = @apparel.collection
   end
   
 end
