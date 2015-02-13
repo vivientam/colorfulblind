@@ -8,7 +8,10 @@
         </div>
 
         <div class="header-right col-xs-3">
-          <div class="sign-in">Sign in or create an account
+          <div class="sign-in">
+            <%= link_to "Sign in", user_session_path, :class => "sign-in" %>
+            or 
+            <%= link_to "create an account", new_user_registration_path, :class => "create an account" %>
           </div>
           <div class="book-an-appointment">
           Book an Appointment
