@@ -6,8 +6,4 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
-  def new
-    @signin = Signin.new
-  end
-
 end

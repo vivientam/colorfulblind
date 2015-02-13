@@ -14,8 +14,6 @@ Rails.application.routes.draw do
 
   get 'contact' => 'static_pages#contact'
 
-  # get 'signin' => 'static_pages#signin'
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
