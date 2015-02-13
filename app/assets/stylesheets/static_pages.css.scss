@@ -5,6 +5,18 @@
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   text-transform: uppercase;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding-top: 30%;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  };
+}
+
+.img-centre{
+  background-image: center;
 }
 
 .cf{
@@ -32,6 +44,6 @@
 .cf:before, .cf:after{
   content: ".";
   display: block;
-  heigth: 0;
+  height: 0;
   visibility: hidden;
 }

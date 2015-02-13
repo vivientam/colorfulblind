@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get 'contact' => 'static_pages#contact'
 
+  get 'appointment' => 'static_pages#appointment'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
