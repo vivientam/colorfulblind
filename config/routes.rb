@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :apparels
 
+  resources :orders
+
   get 'ourstory' => 'static_pages#ourstory'
 
   get 'contact' => 'static_pages#contact'

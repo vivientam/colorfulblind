@@ -1,0 +1,49 @@
+<h1>MY CART</h1>
+
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Content</th>
+        <th>Size</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td colspan="4">Total:</td>
+        <td colspan="2"><%= @total %></td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <% @order.sizes.each do |size| %>
+        <tr>
+          <td><%= size.apparel.name %></td>
+          <td><%= size.apparel.description %></td>
+          <td><%= size.name %></td>
+          <td>1</td>
+          <td><%= size.apparel.price %></td>
+          <td>X</td>
+        </tr>
+      <% end %> 
+    </tbody>
+
+  </table>
+
+  <div>
+    <div>
+      <p>Please leave special instruction below:</p>
+      <input type="text" name="instruction" placeholder="Instructions">
+      </div>
+
+      <div>
+      <p>Total: <%= @total %></p>
+      <%# button_to "Checkout", checkout_path, :class => "btn btn-default" %>
+      </div>
+    </div>  
+  </div>
+
+</div>
