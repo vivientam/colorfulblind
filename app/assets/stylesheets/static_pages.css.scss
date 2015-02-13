@@ -1,0 +1,37 @@
+.home-feature-overlay{
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.cf{
+  zoom: 1;
+}
+
+.cf:before{
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.cf:before, .cf:after{
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.c:after{
+  clear: both;
+}
+
+.cf:before, .cf:after{
+  content: ".";
+  display: block;
+  heigth: 0;
+  visibility: hidden;
+}
