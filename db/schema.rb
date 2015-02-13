@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20150213064111) do
   end
 
   create_table "collections", force: true do |t|
+    t.string   "year"
     t.string   "name"
     t.string   "location"
     t.datetime "created_at"

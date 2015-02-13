@@ -9,18 +9,42 @@
 # Collection.create([{}, {}, {}])
 Collection.create([
   {
+    year: "2015",
     name: "Spring",
     location: "New York"
   },
   {
+    year: "2015",
     name: "Summer",
     location: "New York"
   },
   {
+    year: "2015",
     name: "Autumn",
     location: "New York"
   },
   {
+    year: "2015",
+    name: "Winter",
+    location: "New York"
+  },
+  {
+    year: "2014",
+    name: "Spring",
+    location: "New York"
+  },
+  {
+    year: "2014",
+    name: "Summer",
+    location: "New York"
+  },
+  {
+    year: "2014",
+    name: "Autumn",
+    location: "New York"
+  },
+  {
+    year: "2014",
     name: "Winter",
     location: "New York"
   }
