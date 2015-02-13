@@ -20,6 +20,9 @@ Rails.application.routes.draw do
 
   get 'faq' => 'static_pages#faq'
 
+  get 'return_policy' => 'static_pages#return_policy'
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
