@@ -1,39 +1,40 @@
 <div class="row">
   <h3 class="col-md-8 col-md-offset-2 col-xs-12 bold-text">2015 <%= @collection.name %> Collection</h3>
-
-
 </div>
 
 <div class="row">
   <div class="col-xs-12 box">
     <div class="row">
-      <div class="col-xs-12 collection-box">
+      <div class="collection-box">
 
-          <div class="col-xs-3 collection-image">
+          <div class="col-xs-3">
           <%= image_tag("apparels/#{@apparel.id}.jpg") %>
           </div>
 
-          <div "coll-xs-8">
-            <div class="collection-name">
-            <%= @apparel.name %>
-            </div>
-            <div class="collection-price">
-            <%= @apparel.currency %> <%= @apparel.price %>
-            </div>
-            <div class="collection-description">
-            <%= @apparel.description %>
-            </div>
-            <div class="collection-material">
-            <%= @apparel.material %>
-            </div>
-            <div class="collection-care">
-            <%= @apparel.care %>
-            </div>
-            <div class="collection-size">
-            <%#= apparel.size %>
-            </div>
+          <div class="col-xs-8">
+            <h1 class="apparel-name"><%= @apparel.name %></h1>
+            <p class="apparel-price">
+              <%= @apparel.currency %> <%= @apparel.price %>
+            </p>
+            <h2 class="apparel-title">Description</h2>
+            <p class="apparel-description">
+              <%= @apparel.description %>
+            </p>
+            <h2 class="apparel-title">Content</h2>
+            <p class="apparel-description">  
+              <%= @apparel.material %>
+            </p>
+            <h2 class="apparel-title">Care</h2>
+            <p class="apparel-description">  
+              <%= @apparel.care %>
+            </p>
+            <h2 class="apparel-title">Size</h2>
+            <p class="apparel-description">  
+              <% @apparel.sizes.each do |size| %>
+                <%= size.name %>
+              <% end %>
+            </p>
           </div>
-    
 
       </div>
     </div>
