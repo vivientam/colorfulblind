@@ -1,5 +1,8 @@
 class Order < ActiveRecord::Base
 
   belongs_to :user
-  has_many :apparels
+
+  # build the "has_many, through" association:
+  has_many :order_sizes
+  has_many :sizes, through: :order_sizes
 end
