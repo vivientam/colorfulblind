@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
   get 'appointment' => 'static_pages#appointment'
 
+  get 'faq' => 'static_pages#faq'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
