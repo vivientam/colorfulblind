@@ -1,0 +1,49 @@
+.home-feature-overlay{
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-transform: uppercase;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding-top: 30%;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  };
+}
+
+.img-centre{
+  background-image: center;
+}
+
+.cf{
+  zoom: 1;
+}
+
+.cf:before{
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.cf:before, .cf:after{
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.c:after{
+  clear: both;
+}
+
+.cf:before, .cf:after{
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
