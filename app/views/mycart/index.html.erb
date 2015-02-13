@@ -1,0 +1,38 @@
+<h1>MY CART</h1>
+
+<div>
+  <table>
+    <th>
+    <td>Product</td>
+    <td>Color</td>
+    <td>Size</td>
+    <td>Quantity
+    <td>Price</td>
+    <td>Remove</td>
+    </th>
+
+    <tr>
+      <td>image</td>
+      <td>blue</td>
+      <td>8</td>
+      <td>1</td>
+      <td>HKD1000.0</td>
+      <td>X</td>
+    </tr>
+
+  </table>
+
+  <div>
+    <div>
+      <p>Please leave special instruction below:</p>
+      <input type="text" name="instruction" placeholder="Instructions">
+      </div>
+
+      <div>
+      <p>Total: HKD1000.0</p>
+      <% button_to "Checkout", checkout_path, :class => "btn btn-default" %>
+      </div>
+
+    </div>
+
+  </div>
