@@ -1294,3 +1294,18 @@ apparel.sizes.create([
 ])
 
 apparel.save
+
+
+user = User.create(:email => "vivien@color.com", :password => "12345678")
+
+order = user.orders.create
+
+OrderSize.create(:order_id => 1, :size_id => 5)
+OrderSize.create(:order_id => 1, :size_id => 15)
+OrderSize.create(:order_id => 1, :size_id => 20)
+OrderSize.create(:order_id => 1, :size_id => 25)
+OrderSize.create(:order_id => 1, :size_id => 30)
+OrderSize.create(:order_id => 1, :size_id => 35)
+OrderSize.create(:order_id => 1, :size_id => 40)
+
+
