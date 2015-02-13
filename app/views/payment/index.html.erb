@@ -1,0 +1,11 @@
+<h1>Your order</h1>
+
+<div class="payment-box">    
+  <div>
+  Amount: $1000.00
+  </div>
+  <div class="payment-btn">
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="<%= Rails.configuration.stripe[:publishable_key] %>" data-description="Order" data-amount="500">s
+    </script>
+  </div>
+</div>
