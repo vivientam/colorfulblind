@@ -672,7 +672,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  # 24 pm2_24
+  # 23 pm2_24
   {
     name:"square accordion vast",
     currency:"HKD",
@@ -699,7 +699,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  # 25 pm2_56
+  # 24 pm2_56
   {
     name:"flip turn dress",
     currency:"HKD",
@@ -726,7 +726,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  # 26 pm2_57
+  # 25 pm2_57
   {
     name:"different turns top",
     currency:"HKD",
@@ -753,7 +753,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  # 27 pm2_59
+  # 26 pm2_59
   {
     name:"cowl-neck design top",
     currency:"HKD",
@@ -780,7 +780,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  # 28 pmsf_11
+  # 27 pmsf_11
   {
     name:"wear it wrong top",
     currency:"HKD",
@@ -807,7 +807,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  # 29 pmsf_12
+  # 28 pmsf_12
   {
     name:"two peas in a pod A",
     currency:"HKD",
@@ -834,7 +834,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  # 30 pmsf_14
+  # 29 pmsf_14
   {
     name:"two peas in a pod B",
     currency:"HKD",
@@ -861,7 +861,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  # 31 pmsf_16
+  # 30 pmsf_16
   {
     name:"full moon top",
     currency:"HKD",
@@ -888,7 +888,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  # 32 pmsf_17
+  # 31 pmsf_17
   {
     name:"fcrescent moon top",
     currency:"HKD",
@@ -915,7 +915,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_20
+  # 32 pmsf_20
   {
     name:"the magic is in the wearing",
     currency:"HKD",
@@ -942,7 +942,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_22
+  # 33 pmsf_22
   {
     name:"whac-A-mole",
     currency:"HKD",

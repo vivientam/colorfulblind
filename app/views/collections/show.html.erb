@@ -1,6 +1,5 @@
 <div class="row">
-<h3 class="col-md-8 col-md-offset-2 col-xs-12 bold-text"><%= @collection.name %></h3>
-
+  <h3 class="col-md-8 col-md-offset-2 col-xs-12 bold-text"><%= @collection.name %></h3>
 </div>
 
 <div class="row">
@@ -10,21 +9,16 @@
   
       <div class="row">
         
-          <div class="col-xs-5 collection-name">
-            <%= apparel.name %>
-          </div>
+        <div class="col-xs-5  collection-image">
+          <%= image_tag("apparels/#{apparel.id}.jpg") %>
+        </div> 
 
-          <div class="col-xs-5  collection-image">
-            <%= image_tag("apparels/#{apparel.id}.jpg") %>
-          </div> 
-        
-      </div>
-
-      <div class="row">
         <%= link_to apparel.name, apparel_path, :class => "apparel-link" %>
-        <% end %>
+
       </div>
+
       
+    <% end %>  
   </div>
 </div>
 
