@@ -1,0 +1,45 @@
+<div id="edit-user" class="text-general">
+
+  <h1>Update your profile</h1>
+
+    <div class="form-group">
+      
+    <%= form_for current_user do |f| %>
+
+        <div class="spacing">
+          <%= f.label :title, :class => "title-spacing" %>
+          <%= f.text_field :title, :class => "form-control user-edit"%>
+        </div>
+        <div class = "spacing">
+          <%= f.label :first_name, :class => "title-spacing" %>
+          <%= f.text_field :first_name, :class => "form-control user-edit" %>
+        </div>
+        <div class = "spacing">
+          <%= f.label :last_name, :class => "title-spacing" %>
+          <%= f.text_field :last_name, :class => "form-control user-edit" %>
+        </div>
+        <div class = "spacing">
+          <%= f.label :address, :class => "title-spacing" %>
+          <%= f.text_field :address, :class => "form-control user-edit" %>
+        </div>
+        <div class = "spacing">
+          <%= f.label :email, :class => "title-spacing" %>
+          <%= f.text_field :email, :class => "form-control user-edit" %>
+        </div>
+        <div class = "spacing">
+          <%= f.label :credit_card_no, :class => "title-spacing" %>
+          <%= f.text_field :credit_card_no, :class => "form-control user-edit" %>
+        </div>
+        <div class = "spacing">
+          <%= f.label :credit_card_expiry_date, :class => "title-spacing" %>
+          <%= f.text_field :credit_card_expiry_date, :class => "form-control user-edit" %>
+        </div>
+        
+          <%= f.submit "Submit", :class => "btn btn-warning" %>
+
+        </div>
+
+      <% end %>
+
+    </div>
+  
