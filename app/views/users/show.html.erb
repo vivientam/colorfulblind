@@ -1,0 +1,39 @@
+<div class="users-show col-xs-9 text-general">
+
+<h1>My profile:</h1>
+
+<div class="profile-text">
+  <div>
+    Title:<%= @user.title %>
+  </div>
+  <div>First Name:
+    <%= @user.first_name %>
+  </div>
+  <div>Last Name:
+    <%= @user.last_name %>
+  </div>
+  <div>Address:
+    <%= @user.address %>
+  </div>
+  <div>Email:
+    <%= @user.email %>
+  </div>
+  <div>Credit Card No:
+    <%= @user.credit_card_no %>
+  </div>
+  <div>Credit Card Expiry Date:
+    <%= @user.credit_card_expiry_date %>
+  </div>
+</div>
+
+<% if current_user == @user %>
+
+  <div class="content-btn">
+    <%= button_to "Edit my profile", users_edit_profile_path, method: :get, :class => "btn btn-sm btn-success" %>
+  </div>
+  <div class="content-btn">
+    <%= button_to "Change my password", edit_user_registration_path, method: :get, :class => "btn btn-sm btn-warning" %>
+  </div>
+
+<% else %>
+<% end %>

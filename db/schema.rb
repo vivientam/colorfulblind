@@ -63,10 +63,11 @@ ActiveRecord::Schema.define(version: 20150213064111) do
   end
 
   create_table "users", force: true do |t|
+    t.string   "title"
     t.string   "first_name"
     t.string   "last_name"
     t.string   "address"
-    t.integer  "credit_card_no"
+    t.string   "credit_card_no"
     t.date     "credit_card_expiry_date"
     t.datetime "created_at"
     t.datetime "updated_at"

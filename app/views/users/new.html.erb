@@ -1,0 +1,29 @@
+<div id="new-user" class="text-general">
+  <h1>New users.
+  </h1>
+
+  <div class="new-user-form">
+    <%= form_for @user do |f| %>
+      <div class="new-user-text">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </div>
+
+      <div class="new-user-text">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </div>
+
+      <div class="new-user-text">
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+      </div>
+
+      <div class"btn btn-warning">
+        <%= f.submit "Submit", :class => "btn btn-warning" %>
+      </div>
+
+    <% end %>
+  </div>
+
+</div>
