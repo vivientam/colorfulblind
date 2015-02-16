@@ -27,6 +27,7 @@ Rails.application.routes.draw do
 
   get 'return_policy' => 'static_pages#return_policy'
 
+  resources :subscribers
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
