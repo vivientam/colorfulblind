@@ -2,7 +2,7 @@
 
 <P>Please fill out the fields below to send us a message. For quick questions, or to get the latest news, visit @ colourfulblind on Twitter.</P>
 
-<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+<!-- <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
   <div class="contact">
     <input type="text" name="fname" placeholder="Email Address">
   </div>
@@ -12,4 +12,17 @@
   <div class="contact">
     <input type="submit" value="Submit">
   </div>
-</form>
+</form> -->
+
+<%= form_for @comment do |f| %>
+  <div>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+
+    <%= f.submit "Submit" %>
+  </div>
+
+<% end %>
