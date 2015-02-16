@@ -27,12 +27,25 @@
 
         <div class="col-xs-3">
           <h4>SIGN UP FOR UPDATES</h4>
-          <form class="email-box">
+          <!-- <form class="email-box">
             <input placeholder="Email Address">
             <button class="btn btn-default">
             Subscribe
             </button>
-          </form>
+          </form> -->
+
+        <!-- CREATE A RUBY FORM FOR THE SUBSCRIBER 
+            CREATED IN THE CONTROLLER (DEF NEW) -->
+          <%= form_for @subscriber do |f| %>
+          <div>
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+          </div>
+          <div>
+          <%= f.submit "Subscribe", :class => "btn btn-default" %>
+          </div>
+          <% end %>
+
         </div>
       </div>
 

@@ -6,4 +6,8 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
+  def index
+    @subscriber = Subscriber.new
+  end
+
 end
