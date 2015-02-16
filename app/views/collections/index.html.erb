@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col-xs-12 collection-box">
           <div class="row collection-name">
-          <%= collection.name %>
+          <%= link_to collection.name, collections_path(:id), :class => "collection" %>
           </div>
           <div class="col-xs-9 collection-location">
           <%= collection.location %>
