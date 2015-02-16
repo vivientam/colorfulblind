@@ -36,14 +36,14 @@
 
         <!-- CREATE A RUBY FORM FOR THE SUBSCRIBER 
             CREATED IN THE CONTROLLER (DEF NEW) -->
-          <%= form_for @subscriber do |f| %>
-          <div>
-            <%= f.label :email %>
-            <%= f.text_field :email %>
-          </div>
-          <div>
-          <%= f.submit "Subscribe", :class => "btn btn-default" %>
-          </div>
+          <%= form_for Subscriber.new do |f| %>
+            <div>
+              <%= f.label :email %>
+              <%= f.text_field :email %>
+            </div>
+            <div>
+              <%= f.submit "Subscribe", :class => "btn btn-default" %>
+            </div>
           <% end %>
 
         </div>

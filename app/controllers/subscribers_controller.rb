@@ -12,15 +12,10 @@ class SubscribersController < ApplicationController
     end
   end
 
-  # def new
-  #   @subscriber = Subscriber.new
-  # end
-
   def show
     @subscriber = Subscriber.find(params[:id])
   end 
 
-  # this is only for internal use.
   private
     def subscriber_params
       params.require(:subscriber).permit(:email)
