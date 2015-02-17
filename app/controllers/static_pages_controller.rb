@@ -18,4 +18,7 @@ class StaticPagesController < ApplicationController
   def return_policy
   end
 
+  def sizechart
+  end
+
 end
