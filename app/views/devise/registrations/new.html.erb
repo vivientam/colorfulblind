@@ -1,51 +1,57 @@
-<h2> Sign up</h2>
- 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-   
-  <div>
-    <%= f.label :first_name %>
-    <br>
-    <%= f.text_field :first_name, autofocus: true %>
+<div class="row">
+  <div class="col-xs-6">
+    <h2> Sign up</h2>
+     
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+       
+      <div>
+        <%= f.label :first_name %>
+        <br>
+        <%= f.text_field :first_name, autofocus: true %>
+      </div>
+      <div>
+        <%= f.label :last_name %>
+        br
+        <%= f.text_field :last_name %>
+      </div>
+      <div>
+        <%= f.label :address %>
+        br
+        <%= f.text_field :address %>
+      </div>
+      <div>
+        <%= f.
+      label :email %>
+        br
+        <%= f.email_field :email %>
+      </div>
+      <div>
+        <%= f.label :credit_card_no %>
+        br
+        <%= f.text_field :credit_card_no %>
+      </div>
+      <div>
+        <%= f.label :credit_card_expiry_date %>
+        br
+        <%= f.text_field :credit_card_expiry_date %>
+      </div>
+      <div>
+        <%= f.label :password %>
+        br
+        <%= f.password_field :password %>
+      </div>
+      <div>
+        <%= f.label :password_confirmation %>
+        br
+        <%= f.password_field :password_confirmation %>
+      </div>
+      <div>
+        <%= f.submit 'Sign up' %>
+      </div>
+    <% end %>  
+    <%= render 'devise/shared/links' %>
   </div>
-  <div>
-    <%= f.label :last_name %>
-    br
-    <%= f.text_field :last_name %>
-  </div>
-  <div>
-    <%= f.label :address %>
-    br
-    <%= f.text_field :address %>
-  </div>
-  <div>
-    <%= f.
-  label :email %>
-    br
-    <%= f.email_field :email %>
-  </div>
-  <div>
-    <%= f.label :credit_card_no %>
-    br
-    <%= f.text_field :credit_card_no %>
-  </div>
-  <div>
-    <%= f.label :credit_card_expiry_date %>
-    br
-    <%= f.text_field :credit_card_expiry_date %>
-  </div>
-  <div>
-    <%= f.label :password %>
-    br
-    <%= f.password_field :password %>
-  </div>
-  <div>
-    <%= f.label :password_confirmation %>
-    br
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <div>
-    <%= f.submit 'Sign up' %>
-  </div>
-<% end %>  
-<%= render 'devise/shared/links' %>
+  <h3 class="col-xs-6">"I design for a generation and I have to let that generation be part of the creative process."
+  </h3>
+</div>
