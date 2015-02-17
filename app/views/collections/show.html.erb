@@ -12,12 +12,14 @@
         <div class="col-xs-5  collection-image">
           <%= image_tag("apparels/#{apparel.id}.jpg") %>
         </div> 
-
-        <%= link_to apparel.name, apparel_path, :class => "apparel-link" %>
+      
+      
+        <div class="col-xs-6">  
+          <%= link_to apparel.name, apparel_path, :class => "apparel-link" %>
+        </div>  
 
       </div>
-
-      
+        
     <% end %>  
   </div>
 </div>
