@@ -969,7 +969,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_24
+  # 34 pmsf_24
   {
     name:"hooded",
     currency:"HKD",
@@ -996,7 +996,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_28
+  # 35 pmsf_28
   {
     name:"crushed can tube-top",
     currency:"HKD",
@@ -1023,7 +1023,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_50
+  # 36 pmsf_50
   {
     name:"sharp and snappy A",
     currency:"HKD",
@@ -1050,7 +1050,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_52
+  # 37 pmsf_52
   {
     name:"sharp and snappy C",
     currency:"HKD",
@@ -1077,7 +1077,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_55
+  # 38 pmsf_55
   {
     name:"apple peel A",
     currency:"HKD",
@@ -1104,7 +1104,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_57
+  # 39 pmsf_57
   {
     name:"apple peel B",
     currency:"HKD",
@@ -1131,7 +1131,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_58
+  # 40 pmsf_58
   {
     name:"jutting edge",
     currency:"HKD",
@@ -1158,7 +1158,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_59
+  # 41 pmsf_59
   {
     name:"circular drape design",
     currency:"HKD",
@@ -1185,7 +1185,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_61
+  # 42 pmsf_61
   {
     name:"stopper",
     currency:"HKD",
@@ -1212,7 +1212,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_62
+  # 43 pmsf_62
   {
     name:"loophole",
     currency:"HKD",
@@ -1239,7 +1239,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_64
+  # 44 pmsf_64
   {
     name:"straight lines and curves A",
     currency:"HKD",
@@ -1266,7 +1266,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_67
+  # 45 pmsf_67
   {
     name:"kangaroo",
     currency:"HKD",
@@ -1293,7 +1293,7 @@ apparel.sizes.create([
 apparel.save
 
 apparel = Apparel.create(
-  #pmsf_68
+  # 46 pmsf_68
   {
     name:"stingray",
     currency:"HKD",
