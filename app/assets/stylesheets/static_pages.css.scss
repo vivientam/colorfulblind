@@ -1,20 +1,32 @@
 .home-feature-overlay{
-  position: absolute;
+  display: block;
+  width: 100%;
+  padding: 140px 0;
   font-size: 20px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   text-transform: uppercase;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  padding-top: 30%;
   &:hover {
     background-color: rgba(0, 0, 0, 0.3);
+    color: white;
   };
 }
 
+.home-feature-collections {
+  background-image: url('front_page/dd.jpg');
+  background-size: cover;
+}
+
+.home-feature-ourstory {
+  background-image: url('front_page/dd2_2829.jpg');
+  background-size: cover;
+}
+
+.home-feature-appointments {
+  background-image: url('front_page/pmsf.jpg');
+  background-size: cover;
+}
 div.carousel-caption{
   padding-bottom: 118px;
   font-size: 30px;
