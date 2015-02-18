@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   resources :orders
 
+  get 'sizechart' => 'static_pages#sizechart'
+
   get 'ourstory' => 'static_pages#ourstory'
 
   get 'contact' => 'static_pages#contact'
