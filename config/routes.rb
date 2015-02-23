@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get 'sizechart' => 'static_pages#sizechart'
 
+  resources :contact
+
   get 'ourstory' => 'static_pages#ourstory'
 
   get 'contact' => 'static_pages#contact'
