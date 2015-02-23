@@ -5,11 +5,11 @@ class AppointmentsController < ApplicationController
   end
 
   def create
-    appointment = appointments.new(appoinment_params)
+    appointment = Appointment.new(appoinment_params)
     
     if appointment.save
       redirect_to appointments_path
-      else
+    else
       # if the record doesnt save because it didnt pass the validations
       flash[:message] = appointments.errors
       
