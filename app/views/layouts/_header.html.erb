@@ -1,37 +1,29 @@
 <header id="header" class="header">
-    <div class="container"> 
-
+  <div class="container"> 
     <div class="row">
       <div class="header-top">
         <div class="logo col-xs-9">
           <%= image_tag("colorfulblindf.jpg", alt:"Colorful Blind Logo") %>
         </div>
-
         <div class="header-right col-xs-3">
           <% if current_user %>
-
             <div class="content-btn">
               <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
               <%= link_to "My profile", current_user, :class => "link" %>
             </div>
-
           <% else %>
             <div class="content-btn">
               <%= link_to "Sign in", new_user_session_path, :class => "link" %>
               or
               <%= link_to "Create an account", new_user_registration_path, :class => "link" %>
             </div>
-
           <% end %>
-
           <div class="book-an-appointment">
             <%= link_to "Book an Appointment", appointment_path, :class => "book-an-appointment" %>
           </div>
-
         </div>
       </div>
     </div>
-
     <div class="row header-text">
       <div class="col-xs-3">
         <%= link_to "Home", root_path, :class => "home" %>
@@ -46,6 +38,5 @@
         <%= link_to "Contact", contact_path, :class => "contact" %>
       </div>
     </div>
-
   </div>
 </header>
