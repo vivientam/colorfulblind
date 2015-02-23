@@ -1,6 +1,6 @@
-class CreateContacts < ActiveRecord::Migration
+class CreateMessages < ActiveRecord::Migration
   def change
-    create_table :contacts do |t|
+    create_table :messages do |t|
       t.integer :user_id
       t.string :content
       t.timestamps

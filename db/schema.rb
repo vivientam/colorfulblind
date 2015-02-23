@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 20150216083449) do
     t.datetime "updated_at"
   end
 
-  create_table "contacts", force: true do |t|
+  create_table "messages", force: true do |t|
     t.integer  "user_id"
     t.string   "content"
     t.datetime "created_at"

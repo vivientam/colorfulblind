@@ -19,11 +19,11 @@ Rails.application.routes.draw do
 
   get 'sizechart' => 'static_pages#sizechart'
 
-  resources :contact
+  resources :messages
+  get 'contact' => 'messages#new'
 
   get 'ourstory' => 'static_pages#ourstory'
 
-  get 'contact' => 'static_pages#contact'
 
   get 'appointment' => 'static_pages#appointment'
 

@@ -2,11 +2,9 @@
 
 <P>Please fill out the fields below to send us a message. For quick questions, or to get the latest news, visit @ colourfulblind on Twitter.</P>
 
-<%= form_for @comment do |f| %>
+<%= form_for @message do |f| %>
   <div>
-    <%= f.label :email %>
-    <%= f.email_field :email %>
-
+  
     <%= f.label :content %>
     <%= f.text_field :content %>
 

@@ -1,9 +1,9 @@
-<h4>Your comments</h4>
+<h3>Your messages</h3>
 
-<% if current_user.comments.empty? %>
+<% if @messages.empty? %>
 
     <p class="text-general text-reading">
-     You don't have any comments yet...
+     You don't have any messages yet...
     </p>
 
   <% else %>
@@ -22,14 +22,14 @@
 
 
             <tbody>
-            <% @comments.each do |comment| %>
+            <% @messages.each do |message| %>
             
                 <tr>
-                  <td><%= comment.id %></td>
-                  <td><%= comment.content %></td>
-                  <td><%= comment.created_at %></td>
+                  <td><%= message.id %></td>
+                  <td><%= message.content %></td>
+                  <td><%= message.created_at %></td>
                   
-                  <td><%= link_to "Link to this comment", comment, :class => "btn btn-xs btn-info" %></td>
+                  <td><%= link_to "Link to this message", message_path(message.id), :class => "btn btn-xs btn-info" %></td>
                 </tr> 
             <% end %>
             </tbody>
@@ -37,7 +37,7 @@
       </div>
 
     <script>
-    $( "p" ).append( comment.content;
+    // $( "p" ).append( comment.content;
     </script>
 
   <% end %>

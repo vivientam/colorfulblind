@@ -1,4 +1,4 @@
-class Contact < ActiveRecord::Base
+class Message < ActiveRecord::Base
 
   belongs_to :user
 
