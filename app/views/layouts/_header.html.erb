@@ -11,21 +11,21 @@
           <% if current_user %>
 
             <div class="content-btn">
-            <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-            <%= link_to "My profile", current_user, :class => "link" %>
+              <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+              <%= link_to "My profile", current_user, :class => "link" %>
             </div>
 
           <% else %>
             <div class="content-btn">
-            <%= link_to "Sign in", new_user_session_path, :class => "link" %>
-            or
-            <%= link_to "Create an account", new_user_registration_path, :class => "link" %>
+              <%= link_to "Sign in", new_user_session_path, :class => "link" %>
+              or
+              <%= link_to "Create an account", new_user_registration_path, :class => "link" %>
             </div>
 
           <% end %>
 
           <div class="book-an-appointment">
-          <%= link_to "Book an Appointment", appointment_path, :class => "book-an-appointment" %>
+            <%= link_to "Book an Appointment", appointment_path, :class => "book-an-appointment" %>
           </div>
 
         </div>
