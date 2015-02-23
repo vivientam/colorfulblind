@@ -24,8 +24,9 @@ Rails.application.routes.draw do
 
   get 'ourstory' => 'static_pages#ourstory'
 
-
-  get 'appointment' => 'static_pages#appointment'
+  resources :appointments
+  
+  # get 'appointment' => 'appointments#new'
 
   get 'faq' => 'static_pages#faq'
 

@@ -45,7 +45,7 @@
     </div>
 
     <div class="col-xs-3 col-xs-offset-1">
-      <form name="myForm">
+      <!-- <form name="myForm">
         <div class="appointment">
           <input type="text" name="fname" placeholder="Email Address">
         </div>
@@ -55,7 +55,34 @@
         <div class="appointment">
           <input type="submit" value="Submit">
         </div>
-      </form>
+      </form> -->
+      <%= form_for @appointment do |f| %>
+        <div>
+        <%= f.label :first_name %>
+        <br>
+        <%= f.text_field :first_name %>
+        </div>
+        <div>
+        <%= f.label :last_name %>
+        <br>
+        <%= f.text_field :last_name %>
+        </div>
+        <div>
+        <%= f.label :email %>
+        <br>
+        <%= f.text_field :email %>
+        </div>
+        <div>
+        <%= f.label :date %>
+        <br>
+        <%= f.text_field :date %>
+        </div>
+        <div class="submit">
+        <%= f.submit "Submit" %>
+        </div>
+        
+      <% end %>
     </div>
+
   </div>
 </div>
