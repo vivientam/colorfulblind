@@ -31,7 +31,10 @@
             <h2 class="apparel-title">Size</h2>
             <p class="apparel-description">  
               <% @apparel.sizes.each do |size| %>
-                <%= size.name %>
+                <div class="size-option">  
+                  <input id="size-<%= size.name %>" type="radio" name="size" value="<%= size.name %>">
+                  <label for="size-<%= size.name %>"><%= size.name %></label>
+                </div>
               <% end %>
             </p>
             <button class="btn btn-default">

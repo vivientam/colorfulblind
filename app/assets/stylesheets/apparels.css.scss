@@ -9,11 +9,17 @@
 .size-option label {
   border: 1px solid gray;
   background-color: #fff;
-  padding: 0 10px;
-  
+  padding: 0 5px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
 }
 
 .size-option label:hover {
   background-color: #333;
   color: white;
+}
+
+.size-option {
+  display: inline-block;
 }
