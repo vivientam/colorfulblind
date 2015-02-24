@@ -1,6 +1,6 @@
 <h3>Your appointment</h3>
 
-<% if @appointments.empty? %>
+<% if @appointments %>
   <p class="text-general text-reading">
     You don't have any appointments yet...
   </p>
@@ -22,9 +22,9 @@
         <% @appointments.each do |appointment| %>
           <tr>
             <td><%= appointment.id %></td>
-            <td><%= appointment.first_name %></td>
-            <td><%= appointment.last_name %></td>
-            <td><%= appointment.email %></td>
+            <td><%= appointment.current_user.first_name %></td>
+            <td><%= appointment.current_user.last_name %></td>
+            <td><%= appointment.current_user.email %></td>
             <td><%= appointment.date %></td>
             <td><%= appointment.created_at %></td>
             <td><%= link_to "Link to this appointment", appointment_path(appointment.id), :class => "btn btn-xs btn-info" %></td>
