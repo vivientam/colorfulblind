@@ -56,31 +56,31 @@
           <input type="submit" value="Submit">
         </div>
       </form> -->
-      <%= form_for @appointment do |f| %>
-        <div>
-        <%= f.label :first_name %>
-        <br>
-        <%= f.text_field :first_name %>
-        </div>
-        <div>
-        <%= f.label :last_name %>
-        <br>
-        <%= f.text_field :last_name %>
-        </div>
-        <div>
-        <%= f.label :email %>
-        <br>
-        <%= f.text_field :email %>
-        </div>
-        <div>
-        <%= f.label :date %>
-        <br>
-        <%= f.text_field :date %>
-        </div>
-        <div class="submit">
-        <%= f.submit "Submit" %>
-        </div>
-        
+      <% if current_user %>
+        <%= form_for @appointment do |f| %>
+          <div>First Name:
+            <br>
+            <%= current_user.first_name %>
+          </div>
+          <div>Last Name:
+            <br>
+            <%= current_user.last_name %>
+          </div>
+          <div>Email Address:
+            <br>
+            <%= current_user.email %>
+          </div>
+          <div>
+            <%= f.label :date %>
+            <br>
+            <%= f.text_field :date, placeholder: "eg: 20 Mar 2015" %>
+          </div>
+          <div class="submit">
+            <%= f.submit "Submit" %>
+          </div>
+        <% end %>  
+      <% else %>
+        Please <%= link_to "Sign in", new_user_session_path, :class => "link" %> to make an appointment!
       <% end %>
     </div>
 
