@@ -1,0 +1,28 @@
+<div class="table-responsive">
+    <table class="table table-striped table-text">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Date of Appointment</th>
+          <th>Date of Create</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @appointments.each do |appointment| %>
+          <tr>
+            <td><%= appointment.id %></td>
+            <td><%= appointment.first_name %></td>
+            <td><%= appointment.last_name %></td>
+            <td><%= appointment.email %></td>
+            <td><%= appointment.date %></td>
+            <td><%= appointment.created_at %></td>
+            <td><%= link_to "Link to this appointment", appointment_path(appointment.id), :class => "btn btn-xs btn-info" %></td>
+          </tr> 
+        <% end %>
+      </tbody>
+    </table>
+  </div>
