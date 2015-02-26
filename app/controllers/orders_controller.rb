@@ -15,10 +15,13 @@ class OrdersController < ApplicationController
 
   def create
     @apparel = Apparel.find(params[:order][:apparel_id])
+    puts ">>>>>>>>>>>>>>>>>> "
+    puts params[:size_id]
 
     @order = Order.first
 
-    @order_size = @order.order_sizes.new(:size => @apparel.sizes.first)
+    # params[:size_id] is the id of the size we need to save, just change it when we create a new order_size !
+    @order_size = @order.order_sizes.new(:size_id => params[:size_id])
     @order_size.save
 
     redirect_to @order
