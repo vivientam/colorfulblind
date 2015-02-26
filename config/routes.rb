@@ -26,7 +26,11 @@ Rails.application.routes.draw do
 
   resources :appointments
   
-  # get 'appointment' => 'appointments#new'
+  # example:
+  # url_path ------> someone will type this in their browser
+  # get 'url_path' => "controller_name#action_name"
+
+  get 'appointments_admin' => 'appointments#admin'
 
   get 'faq' => 'static_pages#faq'
 
