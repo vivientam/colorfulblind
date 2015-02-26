@@ -7,40 +7,42 @@
     <div class="row">
       <div class="collection-box">
 
-          <div class="col-xs-3">
-          <%= image_tag("apparels/#{@apparel.id}.jpg") %>
-          </div>
+        <div class="col-xs-3">
+        <%= image_tag("apparels/#{@apparel.id}.jpg") %>
+        </div>
 
-          <div class="col-xs-8 apparels-box">
-            <h1 class="apparel-name"><%= @apparel.name %></h1>
-            <p class="apparel-price">
-              <%= @apparel.currency %> <%= @apparel.price %>
-            </p>
-            <h2 class="apparel-title">Description</h2>
-            <p class="apparel-description">
-              <%= @apparel.description %>
-            </p>
-            <h2 class="apparel-title">Content</h2>
-            <p class="apparel-description">  
-              <%= @apparel.material %>
-            </p>
-            <h2 class="apparel-title">Care</h2>
-            <p class="apparel-description">  
-              <%= @apparel.care %>
-            </p>
-            <h2 class="apparel-title">Size</h2>
-            <p class="apparel-description">  
-              <% @apparel.sizes.each do |size| %>
-                <div class="size-option">  
-                  <input id="size-<%= size.name %>" type="radio" name="size" value="<%= size.name %>">
-                  <label for="size-<%= size.name %>" class="active"><%= size.name %></label>
-                </div>
-              <% end %>
-            </p>
-            <button class="btn btn-default">
-            Add to bag
-            </button>
-          </div>
+        <div class="col-xs-8 apparels-box">
+          <h1 class="apparel-name"><%= @apparel.name %></h1>
+          <p class="apparel-price">
+            <%= @apparel.currency %> <%= @apparel.price %>
+          </p>
+          <h2 class="apparel-title">Description</h2>
+          <p class="apparel-description">
+            <%= @apparel.description %>
+          </p>
+          <h2 class="apparel-title">Content</h2>
+          <p class="apparel-description">  
+            <%= @apparel.material %>
+          </p>
+          <h2 class="apparel-title">Care</h2>
+          <p class="apparel-description">  
+            <%= @apparel.care %>
+          </p>
+          <h2 class="apparel-title">Size</h2>
+          <p class="apparel-description">  
+            <% @apparel.sizes.each do |size| %>
+              <div class="size-option">  
+                <input id="size-<%= size.name %>" type="radio" name="size" value="<%= size.name %>">
+                <label for="size-<%= size.name %>"><%= size.name %></label>
+              </div>
+            <% end %>
+          </p>
+          <%= form_for Order.new do |f| %>
+            <%= f.text_field :apparel_id, :value => @apparel.id, :class => "hidden" %>
+            <%= f.submit "Add to Bag" %>
+          <% end %>
+        </div>
+
 
       </div>
     </div>
