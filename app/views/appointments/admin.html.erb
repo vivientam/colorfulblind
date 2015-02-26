@@ -15,9 +15,9 @@
         <% @appointments.each do |appointment| %>
           <tr>
             <td><%= appointment.id %></td>
-            <td><%= appointment.first_name %></td>
-            <td><%= appointment.last_name %></td>
-            <td><%= appointment.email %></td>
+            <td><%= appointment.user.first_name %></td>
+            <td><%= appointment.user.last_name %></td>
+            <td><%= appointment.user.email %></td>
             <td><%= appointment.date %></td>
             <td><%= appointment.created_at %></td>
             <td><%= link_to "Link to this appointment", appointment_path(appointment.id), :class => "btn btn-xs btn-info" %></td>
