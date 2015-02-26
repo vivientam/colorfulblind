@@ -33,7 +33,7 @@
               <% @apparel.sizes.each do |size| %>
                 <div class="size-option">  
                   <input id="size-<%= size.name %>" type="radio" name="size" value="<%= size.name %>">
-                  <label for="size-<%= size.name %>"><%= size.name %></label>
+                  <label for="size-<%= size.name %>" class="active"><%= size.name %></label>
                 </div>
               <% end %>
             </p>
