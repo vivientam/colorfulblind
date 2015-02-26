@@ -12,4 +12,15 @@ class OrdersController < ApplicationController
     end
 
   end
+
+  def create
+    @apparel = Apparel.find(params[:order][:apparel_id])
+
+    @order = Order.first
+
+    @order_size = @order.order_sizes.new(:size => @apparel.sizes.first)
+    @order_size.save
+
+    redirect_to @order
+  end
 end
