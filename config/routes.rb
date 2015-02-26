@@ -24,8 +24,13 @@ Rails.application.routes.draw do
 
   get 'ourstory' => 'static_pages#ourstory'
 
+  resources :appointments
+  
+  # example:
+  # url_path ------> someone will type this in their browser
+  # get 'url_path' => "controller_name#action_name"
 
-  get 'appointment' => 'static_pages#appointment'
+  get 'appointments_admin' => 'appointments#admin'
 
   get 'faq' => 'static_pages#faq'
 

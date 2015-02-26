@@ -1,0 +1,18 @@
+<div class="text-general">
+
+  <h3>Your appointment #<%= @appointment.id %>:</h3>
+
+  <div>First Name:
+    <%= @appointment.user.first_name %>
+  </div>
+  <div>Last Name:
+    <%= @appointment.user.last_name %>
+  </div>
+  <div>Email:
+    <%= @appointment.user.email %>
+  </div>
+  <div>Date of Appointment:
+    <%= @appointment.date %>
+  </div>
+
+</div>
