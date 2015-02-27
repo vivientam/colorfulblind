@@ -26,4 +26,13 @@ class OrdersController < ApplicationController
 
     redirect_to @order
   end
+
+  def destroy
+    @order = Order.first
+    @order_size = @order.order_sizes.find_by(:id => params[:id])
+    @order_size.destroy
+    render "destroy.js.erb"
+    # Orders.find_by(id: params[:id], sender_id: 1).destroy
+    # redirect_to :orders[:id]
+  end
 end

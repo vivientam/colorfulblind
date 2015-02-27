@@ -19,15 +19,21 @@
       </tr>
     </tfoot>
     <tbody>
-      <% @order.sizes.each do |size| %>
-        <tr>
-          <td><%= size.apparel.name %></td>
-          <td><%= size.apparel.description %></td>
-          <td><%= size.name %></td>
+      <% @order.order_sizes.each do |order_size| %>
+        <!-- FOR EACH LINE, CREATE A FORM -->
+        <tr data-size-id="<%= order_size.id %>">
+          <td><%= order_size.size.apparel.name %></td>
+          <td><%= order_size.size.apparel.description %></td>
+          <td><%= order_size.size.name %></td>
           <td>1</td>
-          <td><%= size.apparel.price %></td>
-          <td><button class="btn btn-sm btn-default button">X</button></td>
+          <td><%= order_size.size.apparel.price %></td>
+          <!-- THE BUTTON SHOULD REMOVE THE BUTTON FROM THE DATABASE : DESTROY METHOD IN THE CONTROLLER -->
+          <!-- IT SHOULD BE A RUBY BUTTON -->
+          <td>
+          <%= button_to 'delete', order_path(:id => order_size.id), :method => :delete, :remote => true %></td>
+          <!-- <td><button class="btn btn-sm btn-default button">X</button></td> -->
         </tr>
+        <!-- CLOSE THE FORM -->
       <% end %> 
     </tbody>
 
