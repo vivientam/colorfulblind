@@ -1,12 +1,18 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# Collection.create([{}, {}, {}])
+# First, remove everything from the database:
+
+Collection.delete_all
+ClothType.delete_all
+Apparel.delete_all
+Size.delete_all
+User.delete_all
+Order.delete_all
+OrderSize.delete_all
+
+# Second, create the seed data:
+
 Collection.create([
   {
     year: "2015",
@@ -1320,16 +1326,21 @@ apparel.sizes.create([
 apparel.save
 
 
-user = User.create(:email => "vivien@color.com", :password => "12345678")
+user = User.create(
+  :first_name => "Vivien", 
+  :last_name => "Tam", 
+  :email => "vivien@color.com", 
+  :password => "12345678"
+)
 
-order = user.orders.create
+# order = user.orders.create
 
-OrderSize.create(:order_id => 1, :size_id => 5)
-OrderSize.create(:order_id => 1, :size_id => 15)
-OrderSize.create(:order_id => 1, :size_id => 20)
-OrderSize.create(:order_id => 1, :size_id => 25)
-OrderSize.create(:order_id => 1, :size_id => 30)
-OrderSize.create(:order_id => 1, :size_id => 35)
-OrderSize.create(:order_id => 1, :size_id => 40)
+# OrderSize.create(:order_id => 1, :size_id => 5)
+# OrderSize.create(:order_id => 1, :size_id => 15)
+# OrderSize.create(:order_id => 1, :size_id => 20)
+# OrderSize.create(:order_id => 1, :size_id => 25)
+# OrderSize.create(:order_id => 1, :size_id => 30)
+# OrderSize.create(:order_id => 1, :size_id => 35)
+# OrderSize.create(:order_id => 1, :size_id => 40)
 
 

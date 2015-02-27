@@ -32,5 +32,8 @@ config/initializers/secret_token.rb
 *.bowerrc
 bower.json
 
+.DS_Store
+
+
 # Ignore pow environment settings
 .powenv

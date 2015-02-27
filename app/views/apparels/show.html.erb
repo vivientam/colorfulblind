@@ -7,11 +7,12 @@
     <div class="row">
       <div class="collection-box">
 
-        <div class="col-xs-3">
+        <div class="col-md-4 col-sm-6">
         <%= image_tag("apparels/#{@apparel.id}.jpg") %>
         </div>
 
-        <div class="col-xs-8 apparels-box">
+        <div class="col-md-8 col-sm-6">
+
           <%= form_for Order.new do |f| %>
             <h1 class="apparel-name"><%= @apparel.name %></h1>
             <p class="apparel-price">
@@ -45,6 +46,7 @@
             <%= f.text_field :apparel_id, :value => @apparel.id, :class => "hidden" %>
             <%= f.submit "Add to Bag" %>
           <% end %>
+          
         </div>
 
 
