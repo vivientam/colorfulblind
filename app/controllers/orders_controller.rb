@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_user!
 
   def show
     @order = Order.find(params[:id])
@@ -18,7 +19,9 @@ class OrdersController < ApplicationController
     puts ">>>>>>>>>>>>>>>>>> "
     puts params[:size_id]
 
-    @order = Order.first
+    if !(@order = current_user.orders.last)
+      @order = current_user.orders.create()
+    end
 
     # params[:size_id] is the id of the size we need to save, just change it when we create a new order_size !
     @order_size = @order.order_sizes.new(:size_id => params[:size_id])
@@ -28,7 +31,7 @@ class OrdersController < ApplicationController
   end
 
   def destroy
-    @order = Order.first
+    @order = current_user.orders.last
     @order_size = @order.order_sizes.find_by(:id => params[:id])
     @order_size.destroy
     render "destroy.js.erb"
