@@ -21,4 +21,7 @@ class StaticPagesController < ApplicationController
   def sizechart
   end
 
+  def terms_and_conditions
+  end
+  
 end
