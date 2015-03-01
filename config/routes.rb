@@ -38,12 +38,13 @@ Rails.application.routes.draw do
 
   resources :subscribers
 
-<<<<<<< HEAD
+
   get 'terms_and_conditions' => 'static_pages#terms_and_conditions'
-=======
+
   resources :payments
 
->>>>>>> added payment button
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
