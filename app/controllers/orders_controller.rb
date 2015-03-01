@@ -34,6 +34,15 @@ class OrdersController < ApplicationController
     @order = current_user.orders.last
     @order_size = @order.order_sizes.find_by(:id => params[:id])
     @order_size.destroy
+
+    # initiate the loop with 0
+    @total = 0
+    # loop through all the @order.sizes
+    @order.sizes.each do |size|
+      # add the price of each size.apparel to the total
+      @total = @total + size.apparel.price
+    end
+
     render "destroy.js.erb"
     # Orders.find_by(id: params[:id], sender_id: 1).destroy
     # redirect_to :orders[:id]
