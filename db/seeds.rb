@@ -34,26 +34,6 @@ Collection.create([
     name: "Winter",
     location: "New York"
   },
-  {
-    year: "2014",
-    name: "Spring",
-    location: "New York"
-  },
-  {
-    year: "2014",
-    name: "Summer",
-    location: "New York"
-  },
-  {
-    year: "2014",
-    name: "Autumn",
-    location: "New York"
-  },
-  {
-    year: "2014",
-    name: "Winter",
-    location: "New York"
-  }
 ])
 
 
