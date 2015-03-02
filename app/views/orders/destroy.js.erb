@@ -1,2 +1,8 @@
 $('tr[data-size-id="<%= @order_size.id %>"]').html('');
 console.log('tr[data-size-id="<%= @order_size.id %>"]');
+
+// $(.subtract).subtract(total-minimize);
+// console.log(total);
+
+$('#total').text("<%= @total%>");
+
