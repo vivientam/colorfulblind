@@ -11,7 +11,7 @@
         <%= image_tag("apparels/#{@apparel.id}.jpg") %>
         </div>
 
-        <div class="col-md-8 col-sm-6 margin10">
+        <div class="col-md-8 col-sm-6 apparel-margin">
 
           <%= form_for Order.new do |f| %>
             <h1 class="apparel-name"><%= @apparel.name %></h1>
