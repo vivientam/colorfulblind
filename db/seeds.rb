@@ -33,7 +33,7 @@ Collection.create([
     year: "2015",
     name: "Winter",
     location: "New York"
-  },
+  }
 ])
 
 
