@@ -14,3 +14,15 @@ $(document).ready(function(){
     $(this).addClass("black");
   })
 })
+
+$(document).ready(function() {
+    $('a[href*=#]').click(function() {
+        var target = $('a[name=' + this.hash.split('#')[1] + ']');
+        if (target.length) {
+            var targetOffset = target.offset().top - 2;
+            $('html,body').animate({scrollTop: targetOffset}, 'fast');
+            return false;
+        }
+    });
+});
+
