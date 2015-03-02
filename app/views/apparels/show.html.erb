@@ -11,7 +11,7 @@
         <%= image_tag("apparels/#{@apparel.id}.jpg") %>
         </div>
 
-        <div class="col-md-8 col-sm-6">
+        <div class="col-md-8 col-sm-6 apparel-info">
 
           <%= form_for Order.new do |f| %>
             <h1 class="apparel-name"><%= @apparel.name %></h1>
@@ -44,7 +44,7 @@
               <% end %>
             </p>
             <%= f.text_field :apparel_id, :value => @apparel.id, :class => "hidden" %>
-            <%= f.submit "Add to Bag" %>
+            <%= f.submit "Add to Bag", :class => 'btn btn-info' %>
           <% end %>
           
         </div>
