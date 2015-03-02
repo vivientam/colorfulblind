@@ -1,27 +1,30 @@
 <div class="row">
-  <h3 class="col-md-8 col-md-offset-2 col-xs-12 bold-text">Collections for 2015</h3>
+  <h3 class="col-xs-12 bold-text">Collections for 2015</h3>
 </div>
 
 <div class="row">
-  <div class="col-md-8 col-md-offset-2 col-xs-12 box">
+  <div class="col-xs-12 box">
 
     <% @collections.each do |collection| %>
   
       <div class="row">
+
         <div class="col-xs-12 collection-box">
           <div class="row collection-name">
           <%= link_to collection.name, collection_path(collection.id), :class => "collection" %>
           </div>
+
           <div class="col-xs-9 collection-location">
           <%= collection.location %>
           </div>
-          <div>
+          
+          <div class="col-xs-12">
             <% collection.apparels.take(5).each do |apparel| %>
-              <%= image_tag("apparels/#{apparel.id}.jpg") %>
+              <%= image_tag("apparels/#{apparel.id}.jpg", :class => "individual-apparel col-xs-2")%>
             <% end %>
           </div>
-
         </div>
+
       </div>
     <% end %>
   </div>
