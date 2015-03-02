@@ -35,7 +35,7 @@
           <!-- THE BUTTON SHOULD REMOVE THE BUTTON FROM THE DATABASE : DESTROY METHOD IN THE CONTROLLER -->
           <!-- IT SHOULD BE A RUBY BUTTON -->
           <td>
-          <%= button_to 'delete', order_path(:id => order_size.id), :method => :delete, :remote => true %></td>
+          <%= button_to 'delete', order_path(:id => order_size.id), :method => :delete, :remote => true, :class => 'btn btn-danger' %></td>
           <!-- <td><button class="btn btn-sm btn-default button">X</button></td> -->
         </tr>
         <!-- CLOSE THE FORM -->
