@@ -12,13 +12,13 @@
             <div class="content-btn">
               <!-- Add ARIA role 'navigation' to the menu options (log in, log out...) -->
               <%= link_to "Sign out", destroy_user_session_path, :method => :delete, 'aria-role' => 'link' %>
-              <%= link_to "My profile", current_user, :class => "link" %>
+              <%= link_to "My profile", current_user, :class => "link", 'aria-role' => 'link' %>
             </div>
           <% else %>
             <div class="content-btn">
               <%= link_to "Sign in", new_user_session_path, :class => "link", 'aria-role' => 'link' %>
               or
-              <%= link_to "Create an account", new_user_registration_path, :class => "link" %>
+              <%= link_to "Create an account", new_user_registration_path, :class => "link", 'aria-role' => 'link' %>
             </div>
           <% end %>
           <div class="book-an-appointment">
