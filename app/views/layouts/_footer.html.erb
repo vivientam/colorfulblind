@@ -1,24 +1,24 @@
-<footer id="footer">
+<footer id="footer" aria-role="footer">
+  <header><h1 class="sr-only">Footer Menu</h1></header>
   <div class="container">
-    <div class="row bottom-footer">
-
+    <nav class="row bottom-footer" aria-role="navigation">
       <div>
         <div class="col-xs-3">  
-          <h4>CUSTOMER CARE</h4>
-          <p><%= link_to "FAQ", faq_path, :class => "FAQ" %></p>
-          <p><%= link_to "Size Chart", sizechart_path, :class => "size_chart" %></p>
-          <p><%= link_to "Return Policy", return_policy_path, :class => "return_policy" %></p>
-          <p><%= link_to "Contact Us", contact_path, :class => "contact" %></p>
+          <h4 class="footer-header">Customer Care</h4>
+          <p><%= link_to "FAQ", faq_path, :class => "FAQ", 'aria-role' => 'link' %></p>
+          <p><%= link_to "Size Chart", sizechart_path, :class => "size_chart", 'aria-role' => 'link' %></p>
+          <p><%= link_to "Return Policy", return_policy_path, :class => "return_policy", 'aria-role' => 'link' %></p>
+          <p><%= link_to "Contact Us", contact_path, :class => "contact", 'aria-role' => 'link' %></p>
         </div>
 
         <div class="col-xs-3">
-          <h4>INFORMATION</h4>
-          <p><%= link_to "Appointments", new_appointment_path, :class => "appointments" %></p>
-          <p><%= link_to "Our Story", ourstory_path, :class => "our-story" %></p>
+          <h4 class="footer-header">Information</h4>
+          <p><%= link_to "Appointments", new_appointment_path, :class => "appointments", 'aria-role' => 'link' %></p>
+          <p><%= link_to "Our Story", ourstory_path, :class => "our-story", 'aria-role' => 'link' %></p>
         </div>
 
         <div class="col-xs-3">
-          <h4>SOCIAL MEDIA</h4>
+          <h4 class="footer-header">Social Media</h4>
           <p>
             <i class="fa fa-facebook-official fa-2x"></i>
             <a href="https://www.facebook.com/sharer/sharer.php?u=http://colorfulblind.herokuapp.com/">
@@ -43,7 +43,7 @@
         </div>
 
         <div class="col-xs-3">
-          <h4>SIGN UP FOR UPDATES</h4>
+          <h4 class="footer-header">Sign Up For Updates</h4>
           <!-- <form class="email-box">
             <input placeholder="Email Address">
             <button class="btn btn-default">
@@ -68,13 +68,13 @@
 
       <div class="row">
         <p class="col-xs-8 rights">
-        2015 COLORFUL BLIND ALL RIGHTS RESERVED
+        2015 Colorful Blind All Rights Reserved
         </p>
         <p class="col-xs-3 terms">
-        <%= link_to "TERMS & CONDITIONS", terms_and_conditions_path, :class => 'terms' %> | PRIVICY POLICY
+        <%= link_to "Terms & Conditions", terms_and_conditions_path, :class => 'terms', 'aria-role' => 'link' %> | Privacy Policy
         </p>
       </div>
 
-    </div>
+    </nav>
   </div>
 </footer>
