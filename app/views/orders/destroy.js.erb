@@ -4,5 +4,9 @@ console.log('tr[data-size-id="<%= @order_size.id %>"]');
 // $(.subtract).subtract(total-minimize);
 // console.log(total);
 
-$('#total').text("<%= @total%>");
+console.log("<%= @total %>");
+console.log('<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="<%= Rails.configuration.stripe[:publishable_key] %>" data-description="Shopping Cart" data-amount="<%= @total*100 %>" data-email="<%= current_user.email %>"></script>');
+
+$('#total').text("<%= @total %>");
+$('.payment-btn').html('<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="<%= Rails.configuration.stripe[:publishable_key] %>" data-description="Shopping Cart" data-amount="<%= @total*100 %>" data-email="<%= current_user.email %>"></script>');
 
