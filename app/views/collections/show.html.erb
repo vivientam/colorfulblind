@@ -1,6 +1,6 @@
-<div class="row">
-  <h3 class="col-md-8 col-md-offset-2 col-xs-12 bold-text"><%= @collection.name %></h3>
-</div>
+<header class="row">
+  <h1 class="col-md-8 col-md-offset-2 col-xs-12 bold-text"><%= @collection.name %> Collection</h1>
+</header>
 
 <div class="row">
   <div class="col-xs-12 box">
@@ -9,13 +9,15 @@
   
       <div class="row">
         
-        <div class="col-xs-5  collection-image">
-          <%= image_tag("apparels/#{apparel.id}.jpg") %>
+        <div class="col-xs-5 collection-image">
+          <!-- add alt to the image to explain what it is -->
+          <%= image_tag("apparels/#{apparel.id}.jpg", :alt => apparel.name) %>
         </div> 
       
       
         <div class="col-xs-6">  
-          <%= link_to apparel.name, apparel, :class => "apparel-link" %>
+          <!-- add link role to the link -->
+          <h2 class="apparel-name"><%= link_to apparel.name, apparel, :class => "apparel-link", 'aria-role' => 'link' %></h2>
         </div>  
 
       </div>

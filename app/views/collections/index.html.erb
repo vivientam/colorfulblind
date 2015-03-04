@@ -1,6 +1,6 @@
-<div class="row">
-  <h3 class="col-xs-12 bold-text">Collections for 2015</h3>
-</div>
+<header class="row">
+  <h1 class="col-xs-12 bold-text">Collections for 2015</h1>
+</header>
 
 <div class="row">
   <div class="col-xs-12 box">
@@ -10,18 +10,19 @@
       <div class="row">
 
         <div class="col-xs-12 collection-box">
-          <div class="row collection-name">
-          <%= link_to collection.name, collection_path(collection.id), :class => "collection" %>
-          </div>
-
-          <div class="col-xs-9 collection-location">
-          <%= collection.location %>
-          </div>
-          
-          <div class="col-xs-12">
-            <% collection.apparels.take(5).each do |apparel| %>
-              <%= image_tag("apparels/#{apparel.id}.jpg", :class => "individual-apparel col-xs-2")%>
-            <% end %>
+          <!-- add link role -->
+          <h2 class="collection-name"><%= link_to collection.name, collection_path(collection.id), :class => "collection", 'aria-role' => 'link' %></h2>
+          <div class="row">
+            <h2 class="col-xs-9 collection-location">
+              <%= collection.location %>
+            </h2>
+            
+            <div class="col-xs-12">
+              <% collection.apparels.take(5).each do |apparel| %>
+                <!-- ADD AN ALT TO THE IMAGES TO EXPLAIN THE CONTENT -->
+                <%= image_tag("apparels/#{apparel.id}.jpg", :alt => "apparel.name", :class => "individual-apparel col-xs-2")%>
+              <% end %>
+            </div>
           </div>
         </div>
 

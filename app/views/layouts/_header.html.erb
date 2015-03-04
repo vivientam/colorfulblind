@@ -1,42 +1,46 @@
-<header id="header" class="header">
+<header id="header" class="header" aria-role="banner">
   <div class="container"> 
     <div class="row">
       <div class="header-top">
         <div class="logo col-xs-9">
+          <h1 class="sr-only">Navigation</h1>
           <%= image_tag("colorfulblindf.jpg", alt:"Colorful Blind Logo") %>
         </div>
-        <div class="header-right col-xs-3">
+        <nav class="header-right col-xs-3" aria-role="navigation">
+          <header><h1 class="sr-only">Login Menu</h1></header>
           <% if current_user %>
             <div class="content-btn">
-              <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-              <%= link_to "My profile", current_user, :class => "link" %>
+              <!-- Add ARIA role 'navigation' to the menu options (log in, log out...) -->
+              <%= link_to "Sign out", destroy_user_session_path, :method => :delete, 'aria-role' => 'link' %>
+              <%= link_to "My profile", current_user, :class => "link", 'aria-role' => 'link' %>
             </div>
           <% else %>
             <div class="content-btn">
-              <%= link_to "Sign in", new_user_session_path, :class => "link" %>
+              <%= link_to "Sign in", new_user_session_path, :class => "link", 'aria-role' => 'link' %>
               or
-              <%= link_to "Create an account", new_user_registration_path, :class => "link" %>
+              <%= link_to "Create an account", new_user_registration_path, :class => "link", 'aria-role' => 'link' %>
             </div>
           <% end %>
           <div class="book-an-appointment">
-            <%= link_to "Book an Appointment", new_appointment_path, :class => "book-an-appointment" %>
+            <%= link_to "Book an Appointment", new_appointment_path, :class => "book-an-appointment", 'aria-role' => 'link' %>
           </div>
-        </div>
+        </nav>
       </div>
     </div>
-    <div class="row header-text">
+    <nav class="row header-text" aria-role="navigation">
+      <header><h1 class="sr-only">Main Menu</h1></header>
       <div class="col-xs-3">
-        <%= link_to "Home", root_path, :class => "home" %>
+        <%= link_to "Home", root_path, :class => "home", 'aria-role' => 'link' %>
       </div>
       <div class="col-xs-3">
-        <%= link_to "Collections", collections_path, :class => "collections" %>
+        <%= link_to "Collections", collections_path, :class => "collections", 'aria-role' => 'link' %>
       </div>
       <div class="col-xs-3">
-        <%= link_to "Ourstory", ourstory_path, :class => "ourstory" %>
+        <%= link_to "Ourstory", ourstory_path, :class => "ourstory", 'aria-role' => 'link' %>
       </div>
       <div class="col-xs-3">
-        <%= link_to "Contact", contact_path, :class => "contact" %>
+        <%= link_to "Contact", contact_path, :class => "contact", 'aria-role' => 'link' %>
       </div>
-    </div>
+    </nav>
   </div>
 </header>
