@@ -1,7 +1,9 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-8">
-      <h3>THE PERFECT FIT</h3>
+      <header>
+        <h1 class="uppercase">The Perfect Fit</h1>
+      </header>
 
       <P>We’d like to put a face to your name.</P>
 
@@ -24,18 +26,18 @@
   <div class="row">
     <div class="col-xs-3">
       <div class="appointment-border">
-        <h3>PRIVATE FITTINGS</h3>
+        <h3 class="uppercase">Private Fittings</h3>
         <p>By Appointment Only</p>
       </div>
 
       <div class="appointment-border">
-        <h3>LOCATION</h3>
+        <h3 class="uppercase">Location</h3>
         <p>120 West 30th Street, Suite 1502
             New York, NY 10018</p>
       </div>
 
       <div>
-        <h3>PHONE</h3>
+        <h3 class="uppercase">Phone</h3>
         <p>(917) 397.0579</p>
       </div>
     </div>
@@ -45,17 +47,7 @@
     </div>
 
     <div class="col-xs-3 col-xs-offset-1">
-      <!-- <form name="myForm">
-        <div class="appointment">
-          <input type="text" name="fname" placeholder="Email Address">
-        </div>
-        <div class="appointment">
-          <input type="text" name="fname" placeholder="Make a date">
-        </div>
-        <div class="appointment">
-          <input type="submit" value="Submit">
-        </div>
-      </form> -->
+      
       <% if current_user %>
         <%= form_for @appointment do |f| %>
           <div>First Name:
@@ -80,7 +72,7 @@
           </div>
         <% end %>  
       <% else %>
-        Please <%= link_to "Sign in", new_user_session_path, :class => "link" %> to make an appointment!
+        Please <%= link_to "Sign in", new_user_session_path, :class => "link", 'aria-role' => 'link' %> to make an appointment!
       <% end %>
     </div>
 

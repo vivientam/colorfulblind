@@ -13,14 +13,14 @@
           <!-- add link role -->
           <h2 class="collection-name"><%= link_to collection.name, collection_path(collection.id), :class => "collection", 'aria-role' => 'link' %></h2>
           <div class="row">
-            <h2 class="col-xs-9 collection-location">
+            <p class="col-xs-9 collection-location">
               <%= collection.location %>
-            </h2>
+            </p>
             
             <div class="col-xs-12">
               <% collection.apparels.take(5).each do |apparel| %>
                 <!-- ADD AN ALT TO THE IMAGES TO EXPLAIN THE CONTENT -->
-                <%= image_tag("apparels/#{apparel.id}.jpg", :alt => "apparel.name", :class => "individual-apparel col-xs-2")%>
+                <%= image_tag("apparels/#{apparel.id}.jpg", :alt => apparel.name, :class => "individual-apparel col-xs-2")%>
               <% end %>
             </div>
           </div>
