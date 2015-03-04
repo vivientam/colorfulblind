@@ -43,6 +43,8 @@ Rails.application.routes.draw do
 
   resources :payments
 
+  get 'privacy_policy' => 'static_pages#privacy_policy'
+
 
 
   # Example of regular route:
