@@ -32,6 +32,7 @@ class OrdersController < ApplicationController
 
   def destroy
     @order = current_user.orders.last
+    # @order = Order.find(params[:id])
     @order_size = @order.order_sizes.find_by(:id => params[:id])
     @order_size.destroy
 

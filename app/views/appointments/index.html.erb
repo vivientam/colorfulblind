@@ -1,9 +1,11 @@
-<h3>Your appointment</h3>
+<header>
+  <h1>Your appointments</h1>
+</header>
 
-<% if not @appointments %>
-  <p class="text-general text-reading">
+<% if @appointments.empty? %>
+  <h2 class="text-general text-reading no-appointment">
     You don't have any appointments yet...
-  </p>
+  </h2>
 <% else %>
   <div class="table-responsive">
     <table class="table table-striped table-text">

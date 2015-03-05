@@ -14,7 +14,9 @@
         <div class="col-md-8 col-sm-6 apparel-info">
 
           <%= form_for Order.new do |f| %>
-            <h1 class="apparel-name"><%= @apparel.name %></h1>
+            <header>
+              <h1 class="apparel-name"><%= @apparel.name %></h1>
+            </header>
             <p class="apparel-price">
               <%= @apparel.currency %> <%= @apparel.price %>
             </p>
